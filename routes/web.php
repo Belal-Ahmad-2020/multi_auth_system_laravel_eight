@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('project', function({
+Route::get('/project', function () {
     return "Multi Auth Project Laravel 8 November 2021";
 });
