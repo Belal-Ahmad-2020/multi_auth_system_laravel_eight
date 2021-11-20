@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/project', function () {
     return "Multi Auth Project Laravel 8 November 2021";
 });
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
