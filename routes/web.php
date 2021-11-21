@@ -20,6 +20,8 @@ Route::get('/', function () {
 Route::get('/project', function () {
     return "Multi Auth Project Laravel 8 November 2021";
 });
+
+//  new routes that installed after jetstream installation 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
